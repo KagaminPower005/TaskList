@@ -53,7 +53,7 @@
               </td>
               <td width="50px">
                   <form action="delete">
-                      <button type="submit" id="delete_button">削除</button>
+                      <button type="submit" id="delete_button" onclick="return confirm('入力内容を削除しても良いですか？');">削除</button>
                       <input type="hidden" name="id" th:value="${task.id}"/>
                   </form>
               </td>
