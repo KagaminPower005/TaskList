@@ -25,7 +25,7 @@ public class TaskListDao {
     }
 
     public List < TaskItem > findAll() {
-        String query = "SELECT * FROM taskList";
+        String query = "SELECT * FROM taskList ORDER BY done,deadline";
         List < Map < String, Object >> result = jdbcTemplate.queryForList( query);
         List < TaskItem > taskItems = result.stream().map(( Map < String, Object > row) ->
                 new TaskItem(
