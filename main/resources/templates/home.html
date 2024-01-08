@@ -75,15 +75,15 @@
   </div>
 
   <div id ="updateDialog">
-      <div class ="task_ form">
+      <div class ="task_form">
           <h2>タスクの更新</h2>
           <form name="update" action ="/update">
               <input id="update_id" name="id" type="hidden"/>
-              <label>タスク</label><input id="update_task" name="task" type="text"/><br>
-              <label>期限</label><input id="update_deadline" name="deadline" type="date"/><br>
-              <label>状態</label><select id ="update_status" name ="done"><option value="false">未完了</option><option value="true">完了</option></select ><br>
+              <label>タスク</label><input id="update_task" name="task" type="text"/>
+              <label>期限</label><input id="update_deadline" name="deadline" type="date"/>
+              <label>状態</label><select id ="update_status" name ="done"><option value="false">未完了</option><option value="true">完了</option></select >
               <div>
-                  <button type="submit" onclick="return checkUpdateForm();">更新</button><br>
+                  <button type="submit" onclick="return checkUpdateForm();">更新</button>
                   <button type="reset" onclick ="getElementById('updateDialog').style.display='none';">キャンセル</button>
                   <script language="javascript" type="text/javascript">
                       function checkUpdateForm(){
